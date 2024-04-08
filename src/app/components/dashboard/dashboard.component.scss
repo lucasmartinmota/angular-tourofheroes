@@ -1,0 +1,42 @@
+.list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.wrapper{
+    width: 500px;
+    background-color: rgba(251, 251, 251, 0.893);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #7c7c7cb0;
+}
+h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+.heroes-menu{
+    text-align: center;
+    &__button{
+        background-color: #a9aded;
+        border: none;
+        color: rgb(0, 0, 0);
+        margin: 2rem;
+        width: 9rem;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 1rem;
+        &:hover{
+            background-color: #9ba0da;
+            color: rgb(0, 0, 0);
+        }
+        &:active{
+            background-color: #2f3260;
+            color: white;
+        }
+    }
+}

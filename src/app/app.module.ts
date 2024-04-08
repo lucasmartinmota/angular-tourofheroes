@@ -10,6 +10,9 @@ import { HeroViewComponent } from './components/hero-view/hero-view.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { MessagesComponent } from './components/messages/messages.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -18,13 +21,16 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     HeroesListComponent,
     HeroViewComponent,
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
 
   ],
   providers: [],

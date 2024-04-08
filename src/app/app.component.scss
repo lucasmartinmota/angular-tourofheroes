@@ -1,0 +1,49 @@
+*{
+    user-select: none;
+}
+h2{
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.navigations-button{
+    text-align: center;
+    &__heroes{
+        width: 8rem;
+        margin: 1rem;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: .8rem;
+        padding: .9rem;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(48, 48, 48);
+        }
+        &:active{
+            background-color: rgb(219, 219, 219);
+            color: black;
+        }
+    }
+    &__dashboard{
+        width: 8rem;
+        margin: 1rem;
+        background-color: #1e2262;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: .8rem;
+        padding: .9rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #2b3188;
+        }
+        &:active{
+            background-color: #979cde;
+            color: black;
+        }
+    }
+}
