@@ -13,6 +13,9 @@ import { CommonModule } from '@angular/common';
 import { MessagesComponent } from './components/messages/messages.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './services/in-memory-data.service';
+
 
 
 
@@ -22,7 +25,7 @@ import {HttpClientModule} from '@angular/common/http';
     HeroesListComponent,
     HeroViewComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,8 +33,10 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     BrowserAnimationsModule,
     CommonModule,
-    HttpClientModule
-
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
