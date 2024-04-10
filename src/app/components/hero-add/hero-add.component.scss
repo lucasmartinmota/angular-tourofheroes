@@ -19,3 +19,39 @@ h2{
     padding-top: 1rem;
     margin-bottom: 2rem;
 }
+.hero-add{
+    margin: 0 auto;
+    display: block;
+    width: 15rem;
+    &__container{
+        margin-top: 10px;
+        user-select: none;
+    }
+    &__hero-name-span{
+        margin-top: .7rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(62, 62, 105);
+    }
+    &__hero-name-input{
+        margin-top: .7rem;
+        margin-bottom: 1rem;
+        padding: .5rem 2rem .5rem .4rem;
+    }
+    &__hero-name-button{
+        background-color: rgb(74, 175, 74);
+        border: none;
+        padding: .7rem 1rem .7rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        color: white;
+        &:hover{
+            background-color: rgb(85, 187, 85);
+        }
+        &:active{
+            background-color: rgb(102, 220, 102);
+        }
+    }
+    
+}

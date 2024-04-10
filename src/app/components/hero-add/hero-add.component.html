@@ -1,11 +1,15 @@
 <section class="container">
     <section class="wrapper">
         <h2>ADD HERO</h2>
-        <section class="hero-add-container">
-            <label for="hero-name"></label>
-            <input type="text" id="hero-name" class="hero-add-container__hero-name-inputs" #heroName />
-            <button type="button" class="hero-add-container__add-button" (click)="addHero(heroName.value);
-            heroName.value=''">Add</button>
+        <section class="hero-add">
+            <div class="hero-add__container">
+                <span class="hero-add__hero-name-span">HERO NAME:</span>
+                <input type="text" class="hero-add__hero-name-input" #heroName />
+            </div>
+            <div class="hero-add__container">
+                <button type="button" class="hero-add__hero-name-button" (click)="addHero(heroName.value);
+                heroName.value=''">Add</button>
+            </div>
         </section>
     </section>
 </section>

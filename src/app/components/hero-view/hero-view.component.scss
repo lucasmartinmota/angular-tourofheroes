@@ -62,10 +62,12 @@ h2{
     &__back-button{
         background-color: white;
         border: 0.5px solid #7c7c7cb0;
-        padding: .7rem;
+        padding: .7rem 1rem .7rem 1rem;
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 1rem;
+        color: rgb(0, 0, 0);
+        margin: 1rem 0 0 0;
         &:hover{
             background-color: #eeeeee;
         }
@@ -74,20 +76,19 @@ h2{
         }
     }
     &__save-button{
-        background-color: rgb(62, 62, 105);
-        border: 0.5px solid rgb(62, 62, 105);
-        padding: .7rem;
+        background-color: rgb(74, 175, 74);
+        border: none;
+        padding: .7rem 1rem .7rem 1rem;
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 1rem;
         color: white;
-        margin-left: 1rem;
+        margin: 1rem;
         &:hover{
-            background-color: rgb(84, 84, 141);
+            background-color: rgb(85, 187, 85);
         }
         &:active{
-            background-color: rgb(170, 170, 255);
-            color: black;
+            background-color: rgb(102, 220, 102);
         }
     }
 }
