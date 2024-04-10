@@ -12,8 +12,4 @@ export const HEROES: Hero[] = [
   { id: 14, name: 'Celabreso' },
   { id: 15, name: 'Bumbum Granada' },
   { id: 16, name: 'Mendigo Supremo' },
-  { id: 17, name: 'Cachorro Caramelo' },
-  { id: 18, name: 'Linguição Mortal' },
-  { id: 19, name: 'Pano de Prato da Morte' },
-  { id: 20, name: 'Meteoro da Paixão' }
 ];

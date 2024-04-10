@@ -1,4 +1,4 @@
-.list-container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +71,23 @@ h2{
         }
         &:active{
             background-color: #d5d5d5;
+        }
+    }
+    &__save-button{
+        background-color: rgb(62, 62, 105);
+        border: 0.5px solid rgb(62, 62, 105);
+        padding: .7rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        color: white;
+        margin-left: 1rem;
+        &:hover{
+            background-color: rgb(84, 84, 141);
+        }
+        &:active{
+            background-color: rgb(170, 170, 255);
+            color: black;
         }
     }
 }
