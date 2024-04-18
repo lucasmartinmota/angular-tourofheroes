@@ -1,12 +1,15 @@
 <section class="container">
   <section class="wrapper">
     <h2>MY HEROES</h2>
+    <button (click)="showDeleteButtons()">Delete</button>
     <ul class="heroes">
       <li class="heroes__list" *ngFor="let hero of heroes">
         <button class="heroes-button" routerLink="/detail/{{hero.id}}" type="button">
           <span class="heroes-button__badge">{{hero.id}}</span>
           <span class="heroes-button__name">{{hero.name}}</span>
         </button>
+        <button *ngIf="deleteButtons" type="button" title="delete hero"
+        (click)="delete(hero)">delete</button>
       </li>
     </ul>
   </section>

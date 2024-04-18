@@ -20,7 +20,6 @@ import { HeroAddComponent } from './components/hero-add/hero-add.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +38,7 @@ import { HeroAddComponent } from './components/hero-add/hero-add.component';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent]
